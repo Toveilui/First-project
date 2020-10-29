@@ -65,5 +65,37 @@ header nav li a:hover{
     top: 50%;
     transform: translateY(-50%);
 }
-
+.container {
+    margin: 0 auto;
+}
+.img_container {
+    float: left;
+}
+.content {
+    float: right;
+}
+.project {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+}
+.project img{
+    width: 100%;
+}
+.project-section{
+    font-size: 0;
+}
+.project-overlay{
+width: 100%;
+height: 100%;
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(0deg, rgb(52, 84, 122), rgb(52, 84, 122));
+transition: opacity .5s;
+}
+.project-overlay:hover{
+    opacity: 0.8;
+}
 
