@@ -98,7 +98,7 @@ body {
   padding-bottom: 100px;
   background: #34547A;
 } 
-.numbersnavimg {
+/* .numbersnavimg {
   display: flex;
   list-style-type: none;
   padding-left: 0;
@@ -121,6 +121,24 @@ body {
   text-decoration: none;
   color:white;
   letter-spacing: 0.1em;
+} */
+.numbernav{
+  display: inline-block
+}
+.numberitem  {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+}
+.numberitem img {
+  margin-right: 20px;
+}
+.numberitem>div{
+  flex-basis: calc(100%-100px);
+}
+.numberitem>div{
+  color: white;
 }
 .skills {
   padding-top: 100px;
@@ -130,13 +148,11 @@ body {
 .video {
   padding-top: 100px;
   padding-bottom: 128px;
-  background: #EEEFF1;;
+  background: #EEEFF1;
 } 
 .video2 {
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 1200px;
+  text-align: center;
   margin-top: 57px;
 } 
 .playbutton {
@@ -156,4 +172,28 @@ body {
   font-weight: 500;
   font-size: 32px;
   margin-top: 50px;
+}
+.project {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+}
+.project img{
+  width: 100%;
+}
+.project-section{
+  font-size: 0;
+}
+.project-overlay{
+width: 100%;
+height: 100%;
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(0deg, rgb(52, 84, 122), rgb(52, 84, 122));
+transition: opacity .5s;
+}
+.project-overlay:hover{
+  opacity: 0.8;
 }
